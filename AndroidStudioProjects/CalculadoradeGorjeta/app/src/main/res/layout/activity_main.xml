@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/gorjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gorjeta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gorjeta"
+        android:hint="Digite um valor; ex 36.50"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:layout_below="@+id/textEdit"
+        android:layout_marginTop="20dp" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seek"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text"
+        android:layout_below="@id/textEdit"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:text="Gorjeta"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:text="Total"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:inputType="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text2"
+        android:layout_below="@id/seek"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="20dp"
+        android:background="#ff922d" />
+
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:layout_below="@id/text4"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/text3"
+        android:background="#ff922d"/>
+
+
+</RelativeLayout>
